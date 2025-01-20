@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pinninti Teja Sree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0e5ec;
+            color: #333;
+        }
+
+        .header {
+            height: 100vh;
+            background: #e0e5ec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+            position: relative;
+            padding-left: 50px; /* Left padding for the header */
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #6200ea;
+        }
+
+        .header-content p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .profile {
+            padding-right: 30px; /* Right padding for the profile */
+        }
+
+        .profile img {
+            width: 500px; /* Increased size for the profile picture */
+            height: 525px;
+            
+            object-fit: cover; 
+            border-radius: 8px;
+            border: 5px solid #ffffff;
+            box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+        }
+
+        .nav {
+            position: absolute; /* Positions the nav bar relative to the page */
+            top: 0; /* Aligns it to the top */
+            left: 0; /* Aligns it to the left */
+            width: auto; /* Adjust width to fit content */
+            background: #f0f4ff; /* Light color for the navigation bar */
+            display: flex;
+            gap: 10px;
+            padding: 10px 15px; /* Padding for spacing */
+            border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .nav a {
+            color: #6200ea; /* Matches the header title color */
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+    
+        .nav a:hover {
+            background: #ffffff; /* Highlight effect */
+            color: #6200ea;
+        }
+
+        section {
+            padding: 40px 10%;
+            margin: 20px;
+            border-radius: 12px;
+            background: #e0e5ec;
+            box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+        }
+
+        h2 {
+            color: #6200ea;
+            font-size: 2rem;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .project-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .project-image {
+            max-width: calc(50% - 10px);
+            border-radius: 12px;
+            box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+        }
+
+        .contact a {
+            color: #6200ea;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background:#dcd6f7;
+            color: #6200ea;
+            margin: 20px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Pinninti Teja Sree</h1>
+            <p>Computer Science & Engineering Student | Aspiring Software Developer</p>
+        </div>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Profile Picture">
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm a 2nd-year Computer Science and Engineering student at K L
+            University with a passion for web development, data structures, and
+            algorithms. I aim to contribute to innovative projects and gain
+            practical experience in software development.
+        </p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Java, C</li>
+            <li><strong>Web Development:</strong> React, Material-UI, Bootstrap, Axios</li>
+            <li><strong>Database Management:</strong> MongoDB, SQL</li>
+            <li><strong>Tools & Technologies:</strong> Git, VS Code</li>
+            <li><strong>Other Skills:</strong> Data Structures and Algorithms</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Smart Recipe Recommendation Platform</h3>
+            <p>
+                Developed a frontend for a recipe recommendation platform using React, Material-UI, and Bootstrap. Features include user authentication, recipe search, ingredient management, and chatbot modules.
+            </p>
+            <div class="project-images">
+                <img src="images/Screenshot (781).png" alt="Project Screenshot 1" class="project-image">
+                <img src="images/Screenshot (782).png" alt="Project Screenshot 2" class="project-image">
+                <img src="images/Screenshot (783).png" alt="Project Screenshot 3" class="project-image">
+                <img src="images/Screenshot (784).png" alt="Project Screenshot 4" class="project-image">
+                <img src="images/Screenshot (785).png" alt="Project Screenshot 5" class="project-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:2300032882cseh@gmail.com">2300032882cseh@gmail.com</a></p>
+        <p><strong>Location:</strong> Vijayawada, India</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Pinninti Teja Sree. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
